@@ -1,0 +1,82 @@
+### Guia Prático da Semana 2: Configuração do Ambiente de Segurança
+Olá!
+
+Este documento serve como um guia passo a passo para você instalar as ferramentas necessárias e realizar a atividade prática da nossa segunda aula. O objetivo é garantir que todos tenham um ambiente de desenvolvimento seguro e padronizado para o restante do curso.
+
+### Parte 1: Instalação das Ferramentas Essenciais
+Vamos instalar o Python, nossa linguagem de programação, e o VSCode, nosso editor de código.
+
+# 1.1 - Instalando o Python 3.x
+Acesse o site oficial: Abra seu navegador e vá para https://www.python.org/downloads/.
+
+Baixe o instalador: O site geralmente detecta seu sistema operacional e sugere a versão mais recente. Clique no botão de download.
+
+Execute a instalação (Atenção aqui!):
+
+Para usuários Windows (Passo CRÍTICO): Na primeira tela do instalador, marque a caixa que diz "Add Python to PATH" na parte inferior. Isso é fundamental para que você possa usar o Python pelo terminal de qualquer pasta. Depois, pode clicar em "Install Now".
+
+Para usuários macOS/Linux: O processo de instalação é mais direto. Siga os passos do instalador.
+
+Verifique a instalação: Após a conclusão, abra um terminal (CMD ou PowerShell no Windows, Terminal no macOS/Linux) e digite o comando abaixo, seguido de Enter:
+
+`python --version`
+
+Se o comando não for encontrado, tente `python3 --version`.
+Você deverá ver a versão do Python que acabou de instalar (ex: Python 3.11.5).
+
+# 1.2 - Instalando o Visual Studio Code (VSCode)
+Acesse o site oficial: Vá para https://code.visualstudio.com/.
+
+Baixe e instale: Baixe a versão para o seu sistema operacional e siga os passos da instalação padrão.
+
+Instale a extensão Python:
+
+# Abra o VSCode.
+
+No menu lateral esquerdo, clique no ícone de Extensões (parece um conjunto de blocos).
+
+Na barra de busca, digite Python.
+
+O primeiro resultado deve ser a extensão da Microsoft. Clique no botão "Install".
+
+
+
+### Parte 2: Prática - Criando seu Ambiente de Desenvolvimento Seguro
+Agora que as ferramentas estão instaladas, vamos criar nosso primeiro projeto de forma segura e isolada usando um ambiente virtual (venv).
+
+Siga estes passos exatamente no seu terminal:
+
+Crie uma pasta para o projeto: Primeiro, vamos criar um diretório e entrar nele.
+
+`mkdir projeto_semana2`
+`cd projeto_semana2`
+
+Crie o ambiente virtual: Este comando cria uma subpasta chamada venv que conterá uma cópia isolada do Python para este projeto.
+
+`python -m venv venv`
+
+Ative o ambiente virtual: Este é o passo que "liga" o isolamento. O comando é diferente dependendo do seu sistema operacional.
+
+Se você usa Windows (CMD ou PowerShell):
+
+`.\venv\Scripts\activate`
+
+Se você usa macOS ou Linux:
+
+`source venv/bin/activate`
+
+Como saber se funcionou? O nome do seu ambiente, (venv), aparecerá no início da linha do seu terminal.
+
+Instale uma biblioteca: Com o ambiente ativo, vamos instalar a biblioteca requests, que usaremos muito no futuro. Note que ela será instalada apenas dentro da pasta venv, não no seu sistema global.
+
+`pip install requests`
+
+Gere o arquivo de dependências: Este é um passo de boas práticas. O comando a seguir cria um arquivo de texto que lista todos os pacotes que seu projeto usa, com suas versões exatas. Isso garante que o projeto funcione em qualquer outra máquina.
+
+`pip freeze > requirements.txt`
+
+Verifique que um arquivo chamado requirements.txt foi criado dentro da pasta projeto_semana2.
+
+Pronto! Você acabou de configurar um ambiente de desenvolvimento limpo, seguro e reprodutível. Esta é a forma profissional de trabalhar com projetos Python.
+
+Se tiver qualquer dúvida, traga para a próxima aula!
