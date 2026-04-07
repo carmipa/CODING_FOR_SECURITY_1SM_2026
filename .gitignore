@@ -182,11 +182,20 @@ __pypackages__/
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/*.code-snippets
+.history/
 
 # IntelliJ / PyCharm / JetBrains
 .idea/
 *.iml
+*.iws
+*.ipr
 out/
+cmake-build-*/
+
+# Eclipse
+.project
+.pydevproject
+.settings/
 
 # Spyder
 .spyderproject

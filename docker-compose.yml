@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  python-aulas:
+    build: .
+    image: fiap-python-aulas
+    container_name: python_aulas_container
+    volumes:
+      # Isso "espelha" sua pasta local com o container. 
+      # Se você mudar o código no VS Code, ele muda no Docker na hora!
+      - .:/app
+    tty: true
+    stdin_open: true
