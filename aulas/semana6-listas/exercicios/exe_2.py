@@ -5,6 +5,8 @@
 # Encontre a maior e a menor nota. Dica: max(lista) e min(lista)
 
 notas = [7.5, 8.0, 9.5, 5.0, 10.0]
+print(f"Lista de notas: {notas}")
+
 media = sum(notas) / len(notas)
 maior_nota = max(notas)
 menor_nota = min(notas)
