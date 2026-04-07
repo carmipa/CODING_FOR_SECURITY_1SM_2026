@@ -17,3 +17,9 @@ minha_lista_de_compras[0] = "pão integral"
 
 # lista com -1   
 
+# fatiando lista (Slicing)
+
+print(minha_lista_de_compras[1:3]) # ["leite", "ovos"]
+print(minha_lista_de_compras[:2])
+print(minha_lista_de_compras[3:])
+
