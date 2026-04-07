@@ -1,3 +1,5 @@
+import sys # Precisa importar no topo do arquivo
+
 def exemplo():
 
     mensagem = """
@@ -72,7 +74,7 @@ def exemplo():
         
         elif (opcao == 4):
             print("Saindo do sistema...")
-            break
+            sys.exit(0)
         
         else:
             print("Opção inválida!")

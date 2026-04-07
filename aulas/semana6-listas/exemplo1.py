@@ -42,3 +42,20 @@ print(minha_lista_de_compras)
 
 minha_lista_de_compras.pop(1) # remove o item do indice 1
 print(minha_lista_de_compras)
+
+# mais ferramentas práticas:
+
+#len - conta quantos itens tem na lista.
+print(len(minha_lista_de_compras))
+
+#sort - ordena a lista.
+minha_lista_de_compras.sort()
+
+#reverse - inverte a ordem da lista.
+minha_lista_de_compras.reverse()
+
+# count - conta quantas vezes um item específico aparece na lista.
+quantidade_cafe = minha_lista_de_compras.count("café")
+print(f"Quantidade de café: {quantidade_cafe}")
+
+
