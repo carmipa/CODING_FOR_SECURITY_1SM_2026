@@ -5,8 +5,12 @@
       <excludeFolder url="file://$MODULE_DIR$/CP/Atividade_1_2/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/CP/Paulo_Andre_carminati_RM_570877_CP1/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/TDS-exercicios/lista1/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/atividades/Atividade_1/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/aulas/Semana2/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/aulas/Semana3-if-else-elif/exercicios/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.14 (CODING_FOR_SECURITY_1SM_2026)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
