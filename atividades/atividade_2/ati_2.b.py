@@ -53,7 +53,7 @@ while True:
         print()
         print()
         print()
-        voltar = input("↩️ Digite qualquer tecla para voltar ao menu anterior: ")
+        voltar = input("Digite qualquer tecla para voltar ao menu anterior: ")
 
     if (opcao == 3):
 
@@ -88,7 +88,7 @@ while True:
     print()
     print()
     print()
-    voltar = input("↩️ Digite qualquer tecla para voltar ao menu anterior: ")
+    voltar = input(" Digite qualquer tecla para voltar ao menu anterior: ")
 
     if (opcao == "0"):
         print()
