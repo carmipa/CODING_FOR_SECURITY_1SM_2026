@@ -35,11 +35,12 @@ while True:
             indice = int(input("Digite o índice: "))
 
             try:
-                print(nomes[indice])
+                print(f"O nome no índice {indice} é: {nomes[indice]}")
             except IndexError:
                 print("Índice inválido")
 
         elif opcao == "3":
+            print("[x] ----- SAINDO DA APLICAÇÃO ----- [x]")
             break
 
         else:
